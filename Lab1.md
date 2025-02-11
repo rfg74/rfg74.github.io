@@ -8,15 +8,15 @@ The Prelab and Step 1 consisted of installing the Arduino IDE and following thro
 
 Step 3 consisted of following Example4_Serial. This example allowed me to type in a character input and then in turn recieve those same characters as an output in the Serial monitor. 
 
-*insert video of serial here*
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iJUh5JsOfLU?si=gcEiw02N-yY4jWki" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Step 4 tested the temperature sensor using the Example2_analogRead. As you can see below, pressing on the sensor, effectively warming it up, causes the temperature in the Serial monitor to slowly increase. 
 
-*insert vieo of temperature sensor*
+<iframe width="560" height="315" src="https://www.youtube.com/embed/912kibkAclM?si=rgCgDeXAZeq8Y4aF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-I then tested the Artemis board's built in microphone using Example1_MicrophoneOutput. I spoke into the microphone with varying pitch to see if the microphone would in turn fluctuate at the proper corresponding pitch.
+I then tested the Artemis board's built in microphone using Example1_MicrophoneOutput. I spoke into the microphone with varying decibels of loudness to see if the microphone would in turn fluctuate at the corresponding frequency.
 
-*insert video of microphone test*
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rot9qSg0sWc?si=e4c_r-u7OsEaiK1v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Part B:
 
