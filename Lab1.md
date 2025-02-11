@@ -2,9 +2,9 @@
 
 ## Part A:
 
-Step 1 consisted of installing the Arduino IDE and following through the preliminary setup instructions to install and calibrate all the necessary components. Step 2 was used to test whether the Artemis board was connected properly. To accomplish this, I ran the Example Blink. This caused the LED on the Artemis board to blink on and off which ensured that it was properly connected. 
+The Prelab and Step 1 consisted of installing the Arduino IDE and following through the preliminary setup instructions to install and calibrate all the necessary components. Step 2 was used to test whether the Artemis board was connected properly. To accomplish this, I ran the Example Blink. This caused the LED on the Artemis board to blink on and off which ensured that it was properly connected. 
 
-*insert video of blink here*
+<iframe width="315" height="560" src="https://youtube.com/shorts/Rp8QVQXiQAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Step 3 consisted of following Example4_Serial. This example allowed me to type in a character input and then in turn recieve those same characters as an output in the Serial monitor. 
 
