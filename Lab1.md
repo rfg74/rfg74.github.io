@@ -18,5 +18,5 @@ I then tested the Artemis board's built in microphone using Example1_MicrophoneO
 
 *insert video of microphone test*
 
-## Part B
+## Part B:
 
