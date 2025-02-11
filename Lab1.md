@@ -20,3 +20,8 @@ I then tested the Artemis board's built in microphone using Example1_MicrophoneO
 
 ## Part B:
 
+The Prelab and initial steps of this lab consisted of familiarizing myself with BLE, setiting up the virtual environment, and installing the appropriate python packages. Additionally, I modified the UUID and MAC addresses to connect the Artemis board to my laptop.
+
+I used the Artemis address c0:81:a4:22:20:64 and the UUID e81d1925-217b-46e1-8718-ba10e53245d7
+
+### Step 1 Echo
