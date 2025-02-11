@@ -6,10 +6,17 @@ Step 1 consisted of installing the Arduino IDE and following through the prelimi
 
 *insert video of blink here*
 
-Step 3 consisted of following Exammple Serial. This example allowed me to type in a character input and then in turn recieve those same characters as an output in the Serial monitor. 
+Step 3 consisted of following Example4_Serial. This example allowed me to type in a character input and then in turn recieve those same characters as an output in the Serial monitor. 
 
 *insert video of serial here*
 
 Step 4 tested the temperature sensor using the Example2_analogRead. As you can see below, pressing on the sensor, effectively warming it up, causes the temperature in the Serial monitor to slowly increase. 
 
 *insert vieo of temperature sensor*
+
+I then tested the Artemis board's built in microphone using Example1_MicrophoneOutput. I spoke into the microphone with varying pitch to see if the microphone would in turn fluctuate at the proper corresponding pitch.
+
+*insert video of microphone test*
+
+## Part B
+
