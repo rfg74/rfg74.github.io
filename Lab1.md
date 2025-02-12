@@ -35,4 +35,29 @@ I used the Artemis address c0:81:a4:22:20:64 and the UUID e81d1925-217b-46e1-871
 
 #### 1. Echo
 
-The first task was to send a string from the computer to the Artemis and then have it return an augmented verson of the string back to the computer. Following the logic used in the PING case, I was able to adapt my code to accomplish the task.
+The first task was to send a string from the computer to the Artemis and then have it return an augmented verson of the string back to the computer such that it prints out "Robot Says ______ :)" . Following the logic used in the PING case, I was able to adapt my code to accomplish the task.
+
+*insert pic of arduino code*
+
+The resulting output from inputting the string "Hello World" can be seen below:
+
+*insert pic of python code cell*
+
+#### 2. Send Three Floats
+
+The second task consisted of writing a command SEND_THREE_FLOATS which sends three floats to the Artemis board and extracts those three values in the Serial monitor. I accomplished this using similar logic to the SEND_TWO_INTS command, adjusting the code to account for three float values instead of int values. 
+
+*insert pic of arduino code*
+
+The resulting output from inputting the series of floats 1.1, 2.2, and 3.3 can be seen below:
+
+*insert pic of python code cell*
+
+#### 3. Get Time Millis
+
+The third task consiste of adding a new command GET_TIME_MILLIS which makes the arduino write a string of the form T:123456 to the string characteristic. To accomplish this, I wrote code using the millis() function in Arduino. Additionally, I had to add the command to the list found in cmd_types.py. 
+
+*insert pic of cmd_types.py*
+
+*insert pic of arduino code*
+
