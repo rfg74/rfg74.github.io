@@ -60,4 +60,4 @@ The third task consiste of adding a new command GET_TIME_MILLIS which makes the 
 
 *insert pic of cmd_types.py*
 
-<img width="500" alt="Profile Picture" src="IMG_2028.jpg">
+<img width="500" alt="Profile Picture" src="IMG_2030.jpg">
