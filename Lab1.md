@@ -92,3 +92,7 @@ From this I was able to calculate that the effective data transfer rate is 203/5
 #### 7. Get Temperature Readings
 
 #### 8. Data Transfer Rate Discussion
+
+### Dicussion
+
+Through my completion of this lab, I was able to develop a deeper understanding of different python concepts which I wasn't exposed to before. For Lab 1, given my lack of expereince, I relied on former student pages as a helpful resource for trouble shooting my problems. Particularly, I referenced Nila's page as well as TA Daria's page. They were very helpful in exposing me to new functions which I was able to adapt, in turn advancing my own understanding of Python and its application as it pertains to this course. Additionally, the Python classes link on the course website was particulalry helpful.  
