@@ -35,7 +35,7 @@ I used the Artemis address c0:81:a4:22:20:64 and the UUID e81d1925-217b-46e1-871
 
 #### 1. Echo
 
-The first task was to send a string from the computer to the Artemis and then have it return an augmented verson of the string back to the computer such that it prints out "Robot Says ______ :)" . Following the logic used in the PING case, I was able to adapt my code to accomplish the task.
+The first task was to send a string from the computer to the Artemis and then have it return an augmented verson of the string back to the computer such that it prints out "Robot Says -> ______ :)" . Following the logic used in the PING case, I was able to adapt my code to accomplish the task.
 
 <img width="248" alt="Profile Picture" src="IMG_2025.jpg">
 
