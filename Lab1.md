@@ -70,6 +70,10 @@ Task four asked us to setup a notification handler to recieve the string value f
 
 #### 5. Data Transfer Rate
 
+<img width="500" alt="Profile Picture" src="IMG_2034.jpg">
+
+I found that in 5 seconds my code was able to collect time data samples 202 times. From this I was able to calculate that the effective data transfer rate is 202/5 or approximately 40.4 messages per second.
+
 #### 6. Send Time Data
 
 #### 7. Get Temperature Readings
