@@ -62,7 +62,7 @@ The third task consiste of adding a new command GET_TIME_MILLIS which makes the 
 
 <img width="500" alt="Profile Picture" src="IMG_2031.jpg">
 
-#### 4. Notification Holder
+#### 4. Notification Handler
 
 Task four asked us to setup a notification handler to recieve the string value from the Artemis board and extraxt the time from the string. I accomplished this using the following code:  
 
@@ -70,10 +70,16 @@ Task four asked us to setup a notification handler to recieve the string value f
 
 #### 5. Data Transfer Rate
 
+Task five asked us to write a loop that gets the current time and send it to my laptop to be processed by the notification handler set up in step 4. Using the following arduino code, I collected values for approximately 5 seconds.
+
+<img width="500" alt="Profile Picture" src="IMG_2036.jpg">
+
+I found that in 5 seconds my code was able to collect time data samples 202 times. 
+
 <img width="500" alt="Profile Picture" src="IMG_2034.jpg">
 <img width="500" alt="Profile Picture" src="IMG_2035.jpg">
 
-I found that in 5 seconds my code was able to collect time data samples 202 times. From this I was able to calculate that the effective data transfer rate is 202/5 or approximately 40.4 messages per second.
+From this I was able to calculate that the effective data transfer rate is 202/5 or approximately 40.4 messages per second.
 
 #### 6. Send Time Data
 
