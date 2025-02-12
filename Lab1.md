@@ -51,8 +51,8 @@ The second task consisted of writing a command SEND_THREE_FLOATS which sends thr
 
 The resulting output from inputting the series of floats 1.1, 2.2, and 3.3 can be seen below:
 
-<img width="248" alt="Profile Picture" src="IMG_2029.jpg">
-<img width="248" alt="Profile Picture" src="IMG_2028.jpg">
+<img width="500" alt="Profile Picture" src="IMG_2029.jpg">
+<img width="500" alt="Profile Picture" src="IMG_2028.jpg">
 
 #### 3. Get Time Millis
 
