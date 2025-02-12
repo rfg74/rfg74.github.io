@@ -64,7 +64,7 @@ The third task consiste of adding a new command GET_TIME_MILLIS which makes the 
 
 #### 4. Notification Holder
 
-Task four asked us to setup a notification handler to recieve the string value from the Artemis board and extraxt the time from the string. I accomplished this  
+Task four asked us to setup a notification handler to recieve the string value from the Artemis board and extraxt the time from the string. I accomplished this using the following code:  
 
 <img width="500" alt="Profile Picture" src="IMG_2033.jpg">
 
