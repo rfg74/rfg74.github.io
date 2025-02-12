@@ -8,4 +8,4 @@ Hello! My name is Roberto Garcia, and I'm a Senior and Early M.Eng student study
 
 ## Labs
 
-- [Lab 1: Setting Up](/Lab1)
+- [Lab 1: Artemis and Bluetooth](/Lab1)
