@@ -41,7 +41,7 @@ The first task was to send a string from the computer to the Artemis and then ha
 
 The resulting output from inputting the string "Hello World" can be seen below:
 
-*insert pic of python code cell*
+<img width="248" alt="Profile Picture" src="IMG_2026.jpg">
 
 #### 2. Send Three Floats
 
