@@ -37,7 +37,7 @@ I used the Artemis address c0:81:a4:22:20:64 and the UUID e81d1925-217b-46e1-871
 
 The first task was to send a string from the computer to the Artemis and then have it return an augmented verson of the string back to the computer such that it prints out "Robot Says ______ :)" . Following the logic used in the PING case, I was able to adapt my code to accomplish the task.
 
-<img width="248" alt="Profile Picture" src="IMG_5852.JPG">
+*insert pic of arduino code*
 
 The resulting output from inputting the string "Hello World" can be seen below:
 
@@ -47,7 +47,7 @@ The resulting output from inputting the string "Hello World" can be seen below:
 
 The second task consisted of writing a command SEND_THREE_FLOATS which sends three floats to the Artemis board and extracts those three values in the Serial monitor. I accomplished this using similar logic to the SEND_TWO_INTS command, adjusting the code to account for three float values instead of int values. 
 
-*insert pic of arduino code*
+<img width="248" alt="Profile Picture" src="IMG_5852.JPG">
 
 The resulting output from inputting the series of floats 1.1, 2.2, and 3.3 can be seen below:
 
