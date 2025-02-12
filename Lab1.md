@@ -61,3 +61,13 @@ The third task consiste of adding a new command GET_TIME_MILLIS which makes the 
 <img width="500" alt="Profile Picture" src="IMG_2030.jpg">
 
 <img width="500" alt="Profile Picture" src="IMG_2031.jpg">
+
+#### 4. Notification Holder
+
+#### 5. Data Transfer Rate
+
+#### 6. Send Time Data
+
+#### 7. Get Temperature Readings
+
+#### 8. Data Transfer Rate Discussion
