@@ -47,7 +47,7 @@ The resulting output from inputting the string "Hello World" can be seen below:
 
 The second task consisted of writing a command SEND_THREE_FLOATS which sends three floats to the Artemis board and extracts those three values in the Serial monitor. I accomplished this using similar logic to the SEND_TWO_INTS command, adjusting the code to account for three float values instead of int values. 
 
-<img width="248" alt="Profile Picture" src="IMG_5852.JPG">
+<img width="248" alt="Profile Picture" src="IMG_2027.jpg">
 
 The resulting output from inputting the series of floats 1.1, 2.2, and 3.3 can be seen below:
 
