@@ -58,11 +58,13 @@ The resulting output from inputting the series of floats 1.1, 2.2, and 3.3 can b
 
 The third task consiste of adding a new command GET_TIME_MILLIS which makes the arduino write a string of the form T:123456 to the string characteristic. To accomplish this, I wrote code using the millis() function in Arduino. Additionally, I had to add the command to the list found in cmd_types.py. 
 
-<img width="500" alt="Profile Picture" src="IMG_2030.jpg">
+<img width="500" alt="Profile Picture" src="IMG_2032.jpg">
 
 <img width="500" alt="Profile Picture" src="IMG_2031.jpg">
 
 #### 4. Notification Holder
+
+Task four asked us to setup a notification handler to recieve the string value from the Artemis board and extraxt the time from the string. I accomplished this  
 
 #### 5. Data Transfer Rate
 
