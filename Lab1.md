@@ -66,6 +66,8 @@ The third task consiste of adding a new command GET_TIME_MILLIS which makes the 
 
 Task four asked us to setup a notification handler to recieve the string value from the Artemis board and extraxt the time from the string. I accomplished this  
 
+<img width="500" alt="Profile Picture" src="IMG_2033.jpg">
+
 #### 5. Data Transfer Rate
 
 #### 6. Send Time Data
