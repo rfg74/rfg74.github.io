@@ -56,11 +56,17 @@ The resulting output from inputting the series of floats 1.1, 2.2, and 3.3 can b
 
 #### 3. Get Time Millis
 
-The third task consiste of adding a new command GET_TIME_MILLIS which makes the arduino write a string of the form T:123456 to the string characteristic. To accomplish this, I wrote code using the millis() function in Arduino. Additionally, I had to add the command to the list found in cmd_types.py. 
+The third task consiste of adding a new command GET_TIME_MILLIS which makes the arduino write a string of the form T:123456 to the string characteristic. To accomplish this, I wrote the following code using the millis() function in Arduino.
 
 <img width="500" alt="Profile Picture" src="IMG_2032.jpg">
 
+Additionally, I had to add the command to the list found in cmd_types.py. 
+
 <img width="500" alt="Profile Picture" src="IMG_2031.jpg">
+
+You can see me successfully calling the funciton in the python code cell below:
+
+<img width="500" alt="Profile Picture" src="IMG_2037.jpg">
 
 #### 4. Notification Handler
 
