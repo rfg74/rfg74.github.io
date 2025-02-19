@@ -72,23 +72,15 @@ As demonstrated in task 1, the accelerometer is incredibly sensitive to noise an
 
 <img width="500" alt="Profile Picture" src="IMG_3100.jpg">
 
-### 4. 
-
 ## Gyroscope
 
-### 1. 
+Below is a video of the serial plotter which compares the data from the gyroscope and the accelerometer. It shows Value 1 (Accelerometer Pitch), Value 2 (Accelerometer Roll), Value 3 (Gyroscope Pitch), Value 4 (Gyroscope Roll), and Value 5 (Gyroscope Yaw).
 
-### 2. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X6xc8gs88IY?si=uNMNoZuN5W9kctNS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+While the gyroscope has significantly less noise than its accelerometer counterpart, it does drift over time which can further be accounted for  by implemented a complementary filter. 
 
 ## Sample Data
-
-### 1. 
-
-### 2. 
-
-### 3. 
-
-### 4. 
 
 ## Stunt
 
