@@ -53,6 +53,7 @@ I got this technique from https://learn.adafruit.com/calibrating-sensors/two-poi
 #### Roll:
 
 Reference Range: 90 - (-90) = 180
+
 Raw Range: 89.46 - (-92.53) = 181.99
 
 Roll Calibration: (((Raw Value - (-92.53)) * 180) / 181.99) + (-90)
@@ -60,6 +61,7 @@ Roll Calibration: (((Raw Value - (-92.53)) * 180) / 181.99) + (-90)
 #### Pitch:
 
 Reference Range: 90 - (-90) = 180
+
 Raw Range: 90.39 - (-91.57) = 181.96
 
 Pitch Calibration: (((Raw Value - (-91.57)) * 180) / 181.96 + (-90)
