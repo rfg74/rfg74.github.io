@@ -1,11 +1,15 @@
 # Lab 2:
 
-## Setting up the IMU
-Upon downloading the appropriate library in Arduino IDE, I connected the IMU to the Artemis board. Once I ran the example code I was able to retrieve data from the IMU. My setup and the stream of data coming from the IMU can be seen below:
+## Objective
 
-*insert pic of hardware setup*
+
+## Setting up the IMU
+Upon downloading the appropriate library in Arduino IDE, I connected the IMU to the Artemis board with the QWICC connecters. Once I ran the example code I was able to retrieve data from the IMU. My setup and the stream of data coming from the IMU can be seen below:
+
+<img width="500" alt="Profile Picture" src="IMG_6744.jpg">
 *insert vid of serial monitor*
 
+The example code defines AD0_VAL = 1. This value refers to the ADR jumper on the back of the IMU. The default value for this is set to 1. However, when the ADR jumper is closed/soldered together, the value then becomes 0. The value for AD0_VAL determines what the I2C address of the IMU is. When AD0_VAL = 1, the IMU's address is 0x69. When the ADR jumper is closed, the I2C address is 0x68. 
 ## Accelerometer
 
 ### 1.
