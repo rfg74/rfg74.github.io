@@ -12,7 +12,7 @@ Upon downloading the appropriate library in Arduino IDE, I connected the IMU to 
 The example code defines AD0_VAL = 1. This value refers to the ADR jumper on the back of the IMU. The default value for this is set to 1. However, when the ADR jumper is closed/soldered together, the value then becomes 0. The value for AD0_VAL determines what the I2C address of the IMU is. When AD0_VAL = 1, the IMU's address is 0x69. When the ADR jumper is closed, the I2C address is 0x68. 
 ## Accelerometer
 
-To familiarize myself with the accelerometer, I placed the IMU in multiple orientations to analyze the different readings it was outputting. The acceleration data was reported in mg (milli - g). When I held the IMU right side up, flat on a table, the acceleromater read appeoximately 1000 mg in the z-axis and 0 acceleration in both the x and y. While in actuality, the x and y axes showed a range of values from 0-20, this can be assumed to be negligable given that the table is not perfectly horizontal. These values are sufficient to indicate minimal tilt. With regard to the z axis, the 1000 mg (1 g) shows that gravity was the preodominant acceleration detected by the IMU. 
+To familiarize myself with the accelerometer, I placed the IMU in multiple orientations to analyze the different readings it was outputting. The acceleration data was reported in mg (milli - g). When I held the IMU right side up, flat on a table, the acceleromater read appeoximately 1000 mg in the z-axis and 0 acceleration in both the x and y. While in actuality, the x and y axes showed a range of values from 0-20, this can be assumed to be negligable given that the table is not perfectly horizontal. These values are sufficient to indicate minimal tilt. With regard to the z axis, the 1000 mg (1 g) shows that gravity was the preodominant acceleration detected by the IMU.
 
 <img width="500" alt="Profile Picture" src="IMG_3040.jpg">
 
@@ -38,14 +38,13 @@ For 0 degrees roll and 90 degrees pitch, the accelerometer pitch value was sitll
 
 <img width="500" alt="Profile Picture" src="IMG_3080.jpg">
 
-From these inconsisten readings, it is quite apparent that the accelerometer is not always accurate. In order to account for this, we can do a two-point calibration such that our data matches our expected output. To do this I implemented the following technique: 
+From these inconsistent readings, it is quite apparent that the accelerometer is not always accurate. In order to account for this, we can do a two-point calibration such that our data matches our expected output. To do this I implemented the following technique: 
 
-"Take two measurements with your sensor:  One near the low end of the measurement range and one near the high end of the measurement range.  Record these readings as "RawLow" and "RawHigh"
-Repeat these measurements with your reference instrument.  Record these readings as "ReferenceLow" and "ReferenceHigh"
 Calculate "RawRange" as RawHigh – RawLow.
 Calculate "ReferenceRange" as ReferenceHigh – ReferenceLow
-In your code, calculate the "CorrectedValue" using the formula below:
-CorrectedValue = (((RawValue – RawLow) * ReferenceRange) / RawRange) + ReferenceLow"
+CorrectedValue = (((RawValue – RawLow) * ReferenceRange) / RawRange) + ReferenceLow
+
+I got this 
 
 #### Roll:
 
