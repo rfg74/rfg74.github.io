@@ -22,8 +22,14 @@ Using the equations from class, I was able to convert accelerometr data into val
 
 <img width="500" alt="Profile Picture" src="IMG_3050.jpg">
 
-For the orientation of -90 degrees roll and 0 degrees pitch, the accelerometer roll measurement is accurate, however, the pitch reading has significant noise and is impossible to read.
+For the orientation of -90 degrees roll and 0 degrees pitch, the accelerometer roll measurement is accurate, however, the pitch reading has significant noise and is almost impossible to read.
+
 <img width="500" alt="Profile Picture" src="IMG_3060.jpg">
+
+For 90 degrees roll and 0 degrees pitch, the results are similar to the prior example in which the the pitch is all over the place. However, the range of fluctuation for the pitch in case is smaller.
+
+<img width="500" alt="Profile Picture" src="IMG_3070.jpg">
+
 
 ### 2.
 ### 3.
