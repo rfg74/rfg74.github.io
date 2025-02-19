@@ -20,7 +20,7 @@ I implemented a visual signal to indicate taht the IMU had successfully turned o
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Gncqb2XcBAM?si=0dwvNMSvsAPLD7Wa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### 1.
+### 1. Accelerometer Data
 
 Using the equations from class, I was able to convert accelerometr data into values of pitch and roll. While testing the IMU, I noticed that the accelerometer had very severe issues with noise under any orientation besides flat on the table (0 pitch and 0 roll). At 0 degrees of roll and 0 degrees of pitch, the accelerometer read consistently with what I was expecting. This data is plotted below:
 
@@ -66,9 +66,11 @@ Raw Range: 90.39 - (-91.57) = 181.96
 
 Pitch Calibration: (((Raw Value - (-91.57)) * 180) / 181.96 + (-90)
 
-### 2.
+### 2 and 3. Accelerometer Noise & Fourier Transform
 
-### 3.
+As demonstrated in task 1, the accelerometer is incredibly sensitive to noise and its environment. In order to account for this and increase accuracy in data collection, the noise should be analyzed. To analyze the noise in the frequency spectrum, I implemented a Fourier Transform inspired by the "Fourier Transfer in Python" tutorial presenting in the lab. I recorded accelerometer data as arrays on the Artemis board and sent it to my computer to plot against its Fourier transform. The FT was achieved using the following code:
+
+<img width="500" alt="Profile Picture" src="IMG_3100.jpg">
 
 ### 4. 
 
@@ -91,3 +93,4 @@ Pitch Calibration: (((Raw Value - (-91.57)) * 180) / 181.96 + (-90)
 ## Stunt
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PwoHfEY-h6Y?si=pjLle83VeBbYdh0D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
