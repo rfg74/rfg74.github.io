@@ -12,6 +12,10 @@ Upon downloading the appropriate library in Arduino IDE, I connected the IMU to 
 The example code defines AD0_VAL = 1. This value refers to the ADR jumper on the back of the IMU. The default value for this is set to 1. However, when the ADR jumper is closed/soldered together, the value then becomes 0. The value for AD0_VAL determines what the I2C address of the IMU is. When AD0_VAL = 1, the IMU's address is 0x69. When the ADR jumper is closed, the I2C address is 0x68. 
 ## Accelerometer
 
+To familiarize myself with the accelerometer, I placed the IMU in multiple orientations to analyze the different readings it was outputting. The acceleration data was reported in mg (milli - g). When I held the IMU right side up, flat on a table, the acceleromater read appeoximately 1000 mg in the z-axis and 0 acceleration in both the x and y. While in actuality, the x and y axes showed a range of values from 0-20, this can be assumed to be negligable given that the table is not perfectly horizontal. These values are sufficient to indicate minimal tilt. With regard to the z axis, the 1000 mg (1 g) shows that gravity was the preodominant acceleration detected by the IMU. 
+
+<img width="500" alt="Profile Picture" src="IMG_3040.jpg">
+
 ### 1.
 ### 2.
 ### 3.
