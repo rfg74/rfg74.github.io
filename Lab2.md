@@ -16,6 +16,10 @@ To familiarize myself with the accelerometer, I placed the IMU in multiple orien
 
 <img width="500" alt="Profile Picture" src="IMG_3040.jpg">
 
+I implemented a visual signal to indicate taht the IMU had successfully turned on. I had the Artemis board blink its built in LED light each time pitch and roll data were collected. I heavily based this code on the Arduino Basics example we used for Lab 1. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Gncqb2XcBAM?si=0dwvNMSvsAPLD7Wa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### 1.
 
 Using the equations from class, I was able to convert accelerometr data into values of pitch and roll. While testing the IMU, I noticed that the accelerometer had very severe issues with noise under any orientation besides flat on the table (0 pitch and 0 roll). At 0 degrees of roll and 0 degrees of pitch, the accelerometer read consistently with what I was expecting. This data is plotted below:
@@ -44,7 +48,7 @@ Calculate "RawRange" as RawHigh – RawLow.
 Calculate "ReferenceRange" as ReferenceHigh – ReferenceLow
 CorrectedValue = (((RawValue – RawLow) * ReferenceRange) / RawRange) + ReferenceLow
 
-I got this 
+I got this technique from https://learn.adafruit.com/calibrating-sensors/two-point-calibration
 
 #### Roll:
 
@@ -69,14 +73,19 @@ Pitch Calibration: (((Raw Value - (-91.57)) * 180) / 181.96 + (-90)
 ## Gyroscope
 
 ### 1. 
+
 ### 2. 
 
 ## Sample Data
 
 ### 1. 
+
 ### 2. 
+
 ### 3. 
+
 ### 4. 
 
 ## Stunt
-*insert stunt video here
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PwoHfEY-h6Y?si=pjLle83VeBbYdh0D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
