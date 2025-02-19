@@ -17,6 +17,14 @@ To familiarize myself with the accelerometer, I placed the IMU in multiple orien
 <img width="500" alt="Profile Picture" src="IMG_3040.jpg">
 
 ### 1.
+
+Using the equations from class, I was able to convert accelerometr data into values of pitch and roll. While testing the IMU, I noticed that the accelerometer had very severe issues with noise under any orientation besides flat on the table (0 pitch and 0 roll). At 0 degrees of roll and 0 degrees of pitch, the accelerometer read consistently with what I was expecting. This data is plotted below:
+
+<img width="500" alt="Profile Picture" src="IMG_3050.jpg">
+
+For the orientation of -90 degrees roll and 0 degrees pitch, the accelerometer roll measurement is accurate, however, the pitch reading has significant noise and is impossible to read.
+<img width="500" alt="Profile Picture" src="IMG_3060.jpg">
+
 ### 2.
 ### 3.
 ### 4. 
