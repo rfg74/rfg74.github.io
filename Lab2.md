@@ -26,13 +26,45 @@ For the orientation of -90 degrees roll and 0 degrees pitch, the accelerometer r
 
 <img width="500" alt="Profile Picture" src="IMG_3060.jpg">
 
-For 90 degrees roll and 0 degrees pitch, the results are similar to the prior example in which the the pitch is all over the place. However, the range of fluctuation for the pitch in case is smaller.
+For 90 degrees roll and 0 degrees pitch, the results are similar to the prior example in which the the pitch is all over the place. However, the range of fluctuation for the pitch in case is smaller. Additionally, the rough average value of these fluctuations appears to lie at 0 degrees. Shown below:
 
 <img width="500" alt="Profile Picture" src="IMG_3070.jpg">
 
+For 0 degrees roll and -90 degrees pitch, the accelerometer pitch value was consistent with the orientation. However, instead of the roll reading 0 degrees, it was noisy and fluctuating between -120 and -160 degrees. 
+
+<img width="500" alt="Profile Picture" src="IMG_3090.jpg">
+
+For 0 degrees roll and 90 degrees pitch, the accelerometer pitch value was sitll consistent with the orientation. Similarly to the prior case, the roll reading was still in the -100's however with less noise in this case. 
+
+<img width="500" alt="Profile Picture" src="IMG_3080.jpg">
+
+From these inconsisten readings, it is quite apparent that the accelerometer is not always accurate. In order to account for this, we can do a two-point calibration such that our data matches our expected output. To do this I implemented the following technique: 
+
+"Take two measurements with your sensor:  One near the low end of the measurement range and one near the high end of the measurement range.  Record these readings as "RawLow" and "RawHigh"
+Repeat these measurements with your reference instrument.  Record these readings as "ReferenceLow" and "ReferenceHigh"
+Calculate "RawRange" as RawHigh – RawLow.
+Calculate "ReferenceRange" as ReferenceHigh – ReferenceLow
+In your code, calculate the "CorrectedValue" using the formula below:
+CorrectedValue = (((RawValue – RawLow) * ReferenceRange) / RawRange) + ReferenceLow"
+
+#### Roll:
+
+Reference Range: 90 - (-90) = 180
+Raw Range: 89.46 - (-92.53) = 181.99
+
+Roll Calibration: (((Raw Value - (-92.53)) * 180) / 181.99) + (-90)
+
+#### Pitch:
+
+Reference Range: 90 - (-90) = 180
+Raw Range: 90.39 - (-91.57) = 181.96
+
+Pitch Calibration: (((Raw Value - (-91.57)) * 180) / 181.96 + (-90)
 
 ### 2.
+
 ### 3.
+
 ### 4. 
 
 ## Gyroscope
