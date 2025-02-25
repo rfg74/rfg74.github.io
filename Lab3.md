@@ -15,16 +15,23 @@ Below is a circuit diagram of how I planned to wire up the components, followed 
 
 ## Lab Tasks
 
-1. In order to power the Artemis board without having it directly connected to my computer, I soldered the 650 mAh battery's wires to JST jumper wires and used heat shrink to insulate the exposed wire. Doing this allowed me to power up the Artemis with only the battery and transmit data via Bluetooth.
+### 1.
+In order to power the Artemis board without having it directly connected to my computer, I soldered the 650 mAh battery's wires to JST jumper wires and used heat shrink to insulate the exposed wire. Doing this allowed me to power up the Artemis with only the battery and transmit data via Bluetooth.
 
-2-4. Using the Arduino library manager, I installed the Sparkfun VL53L1X 4m laser distance library. I then connected the QWIIC board to the Artemis. From there I attached the ToF sensor to the QWIIC board by soldering it to the QWIIC cable. 
+### 2-4.
 
-5. I ran the Example code for Wire I2C which allowed me to see the address of the sensor printed out in the serial monitor. Running the code gave me the following output:
+Using the Arduino library manager, I installed the Sparkfun VL53L1X 4m laser distance library. I then connected the QWIIC board to the Artemis. From there I attached the ToF sensor to the QWIIC board by soldering it to the QWIIC cable. 
+
+### 5. 
+
+I ran the Example code for Wire I2C which allowed me to see the address of the sensor printed out in the serial monitor. Running the code gave me the following output:
 
 <img width="500" alt="Profile Picture" src="IMG_7005.jpg">
 
 This differed from my expectation given that the datasheet indicated that the default address for the ToF sensors was 0x52. This discrepancy can be explained by the fact that the data sheet presents the address in 8-bit representation whereas the Arduino uses a 7-bit address. The binary address was shited left by 1 which gets us from 0b1010010 (52) to 0b0101001 (29) in binary. 
 
-6. The ToF sensor has thre distance modes. These modes (short, medium, long) optimize ranging performance of the sensor given a specific maximum range. Respective to each mode, the maximum range can be set to 1.3m, 3m, or 4m. The longer the range, the further out the sensor can detect objects. However, a caveat to this is that the larger ranges make the sensor more susceptible to ambient light and noise. Short and long distance modes are both built-in, medium mode is only available wiht the Polulu VL53L1X library. I decided that for the purposes of this lab, I would use the short distance mode to reduce effects from ambient light and noise. This works well for my use case.
+### 6.
 
-7. 
+The ToF sensor has thre distance modes. These modes (short, medium, long) optimize ranging performance of the sensor given a specific maximum range. Respective to each mode, the maximum range can be set to 1.3m, 3m, or 4m. The longer the range, the further out the sensor can detect objects. However, a caveat to this is that the larger ranges make the sensor more susceptible to ambient light and noise. Short and long distance modes are both built-in, medium mode is only available wiht the Polulu VL53L1X library. I decided that for the purposes of this lab, I would use the short distance mode to reduce effects from ambient light and noise. This works well for my use case.
+
+### 7. 
