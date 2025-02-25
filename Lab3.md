@@ -25,4 +25,6 @@ Below is a circuit diagram of how I planned to wire up the components, followed 
 
 This differed from my expectation given that the datasheet indicated that the default address for the ToF sensors was 0x52. This discrepancy can be explained by the fact that the data sheet presents the address in 8-bit representation whereas the Arduino uses a 7-bit address. The binary address was shited left by 1 which gets us from 0b1010010 (52) to 0b0101001 (29) in binary. 
 
-6. 
+6. The ToF sensor has thre distance modes. These modes (short, medium, long) optimize ranging performance of the sensor given a specific maximum range. Respective to each mode, the maximum range can be set to 1.3m, 3m, or 4m. The longer the range, the further out the sensor can detect objects. However, a caveat to this is that the larger ranges make the sensor more susceptible to ambient light and noise. Short and long distance modes are both built-in, medium mode is only available wiht the Polulu VL53L1X library. I decided that for the purposes of this lab, I would use the short distance mode to reduce effects from ambient light and noise. This works well for my use case.
+
+7. 
