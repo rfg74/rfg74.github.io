@@ -72,3 +72,10 @@ To analyze the ranging time of my ToF sensor, I created a time array alongside e
 
 ### 8. 
 
+To integrate the second ToF sensor into my system, I had to change the address of the second ToF sensor by first shutting it down by setting the XSHUT pin to LOW, changing the address to 0x30, and then setting the XSHUT pin back to HIGH. To accomplish this, I had to modify my TOF_DATA command accordingly: 
+
+<img width="500" alt="Profile Picture" src="IMG_1010.jpg">
+
+The rest of the arduino code is consistent with what I had in task 7, I simply duplicated the commands to account for both ToF Sensor 1 and 2. Below is the output of the two ToF sensors in the Serial Monitor.
+
+<img width="500" alt="Profile Picture" src="IMG_1050.jpg">
