@@ -79,3 +79,13 @@ To integrate the second ToF sensor into my system, I had to change the address o
 The rest of the arduino code is consistent with what I had in task 7, I simply duplicated the commands to account for both ToF Sensor 1 and 2. Below is the output of the two ToF sensors in the Serial Monitor.
 
 <img width="500" alt="Profile Picture" src="IMG_1050.jpg">
+
+### 9.
+
+### 10. 
+
+While connecting my IMU to the system, I found that one of the ports on my QWIIC connectors is broken making it so, besides the Artemis board itself, only two other components could be attached. 
+
+## References
+
+For Lab 3 I referenced the labs of past students Mikayla Lahr and Daria Kot.
