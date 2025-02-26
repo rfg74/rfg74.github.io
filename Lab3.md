@@ -35,3 +35,27 @@ This differed from my expectation given that the datasheet indicated that the de
 The ToF sensor has thre distance modes. These modes (short, medium, long) optimize ranging performance of the sensor given a specific maximum range. Respective to each mode, the maximum range can be set to 1.3m, 3m, or 4m. The longer the range, the further out the sensor can detect objects. However, a caveat to this is that the larger ranges make the sensor more susceptible to ambient light and noise. Short and long distance modes are both built-in, medium mode is only available wiht the Polulu VL53L1X library. I decided that for the purposes of this lab, I would use the short distance mode to reduce effects from ambient light and noise. This works well for my use case.
 
 ### 7. 
+
+To collect data and test my chosen mode, short mode, I used the setup pictured below.
+
+<img width="500" alt="Profile Picture" src="IMG_1003.jpg">
+
+Using the white box provided to us as a flat wall, I collected data points starting at 45cm and decreasing in increments of 5cm until a 0 cm measurment. I did so to test the accuraccy of my ToF data while within the 1.3m maximum range. 
+
+I wrote a new command in my Arduino code to collect data from my first ToF sensor. The command is listed below:
+
+<img width="500" alt="Profile Picture" src="IMG_1004.jpg">
+<img width="500" alt="Profile Picture" src="IMG_1002.jpg">
+
+To collect this data and analyze it, I wrote the following code in python to generate arrays of the distance measurements, their means, the actual distance, the difference between the actual and recorded measurements, and the resulting standard deviation. The code is listed below:
+
+<img width="500" alt="Profile Picture" src="IMG_1000.jpg">
+<img width="500" alt="Profile Picture" src="IMG_1001.jpg">
+
+Please note that I accidentally labeled my measurements as mm when they are actually meant to be cm.
+
+From the plot below, it is evident that the data is very consistent with the actual distance being measured. The only notable discrepancy is at the 0 cm mark in which the sensor detects a distance despite the box being physically pressed against the ToF sensor. 
+
+<img width="500" alt="Profile Picture" src="IMG_1007.jpg">
+
+To further evaluate accuracy, I plotted the difference between the actual distance and measured distance against the actual distances. There was likely some human error present on my end given that the setup I used was 
