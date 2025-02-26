@@ -58,4 +58,17 @@ From the plot below, it is evident that the data is very consistent with the act
 
 <img width="500" alt="Profile Picture" src="IMG_1007.jpg">
 
-To further evaluate accuracy, I plotted the difference between the actual distance and measured distance against the actual distances. There was likely some human error present on my end given that the setup I used was 
+To further evaluate accuracy, I plotted the difference between the actual distance and measured distance against the actual distances. There was likely some human error present on my end given that the setup I used was eyeballed against a ruler. Regardless, the recorded differences were negligible. 
+
+<img width="500" alt="Profile Picture" src="IMG_1006.jpg">
+
+While the standard deviation plot appears very drastic upon first glance, the actual standard deviation values are consistently less than 0.0008 m or 0.08 cm.
+
+<img width="500" alt="Profile Picture" src="IMG_1005.jpg">
+
+To analyze the ranging time of my ToF sensor, I created a time array alongside each distance array. From this data I converted the array into an array of ranging times which I in turn took the mean of. The collection of data can be found below:
+
+<img width="500" alt="Profile Picture" src="IMG_1008.jpg">
+
+### 8. 
+
