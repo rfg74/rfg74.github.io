@@ -38,7 +38,7 @@ The ToF sensor has thre distance modes. These modes (short, medium, long) optimi
 
 To collect data and test my chosen mode, short mode, I used the setup pictured below.
 
-<img width="500" alt="Profile Picture" src="IMG_1003.jpg">
+<img width="500" alt="Profile Picture" src="IMG_1003.JPG">
 
 Using the white box provided to us as a flat wall, I collected data points starting at 45cm and decreasing in increments of 5cm until a 0 cm measurment. I did so to test the accuraccy of my ToF data while within the 1.3m maximum range. 
 
