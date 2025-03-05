@@ -90,3 +90,17 @@ After I connected all the components, I wanted to try a simple run through of ho
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a_DNTH_fRwI?si=bcoqw6fgPoXI9IA7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Lower Limit PWM:
+
+To identify the minimum PWM required to overcome friction when placed on the floor, I increased the PWM in increments of 5 until the robot started moving. Once the car overcame static friction, I lowered the output value until it stopped moving. From this I found that the lower threshold was around 47. This was from when the car was starting from a full stop. If already moving, the car only needed a value of 33 in order to begin coasting. I also noted that during these trials, my left set of wheels did not spin at the same rate as my right set. They were significantly weaker than the right set. 
+
+Turning proved to require a larger output thank simply moving forward. From my trials I found that a minimum output value of 72 was required to start rotation from a full stop. It should also be noted that throughout these trials, I used up a lot of the battery. As such, I assume these values would be lower on a fully charged battery.
+
+### Calibration Factor
+
+As previously stated, there was a disparity in my wheel rotation rate despite the output to both sides being set to equal values. This was causing a noteable skew to the left every time I ran my car. To resolve this, I have to implement a calibration factor such that both wheels spin at the same rate. During my analysis, I ran both wheels at an equal output. I lowered the output to 70 on each side. However, when I continued running my code multiple times, I noted that the output to the left set of wheels were spinning at random rates. Sometimes I would run the loop and the wheels would spin at the exact rate, other times the wheels would sputter or remain stagnant. 
+
+When both wheels were spinning at full capacity, there was a significantly smaller deflection. With the reference output as 70, I incrementally raised the left side's output until the car was able to drive in a straight line. Through continuous trial and error, I found that an output of 81 was able to keep the trajectory relatively straight. From this I was able to calculate a calibration factor of 81/70 ~= 1.16. Now I know for 200 output on my right set of wheels I need a 232 output for my left set. While this works in theory, in practice the irregularity of my left set of wheels inhibited me from getting the car to move in a proper straight line trajectory. 
+
+## References
+
+For this lab, I primarily referenced the reports of Mikayla Lahr, Daria Kot, and Nila Narayan. Additionally, I attended office hours on Saturday, Monday, and Tuesday to debug my problems. I used ChatGPT to figure out how to add two pictures side by side on my website. 
