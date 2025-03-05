@@ -16,7 +16,7 @@ The Artemis board and the motors/motor drivers are being powered by seperate bat
 
 Below I've attached a picture of my setup and how I attached it to the connectors for the power supply and oscilloscope. I attached the positive wire from the power supply to the positive wire for the battery. I attached the ground wire for both the power supply and the oscilloscope to the ground wire of the battery. I connected the input to the oscilloscope to the different wire depending on which motor/pin I was testing. I tested all four wires that are attached to the motors to test my circuit by seeing if a PWM signal appeared on the oscilloscope. 
 
-<img width="500" alt="Profile Picture" src="IMG_1234.jpeg">
+<img width="500" alt="Profile Picture" src="IMG_7134.JPG">
 
 The power supply was set to a voltage output corresponding with the 850 mAh battery, 3.7 V. I tested each pin independently by setting one pin to an output of 200, and setting all other pins to an output of 0. I repeated this process four times, swirtching pins for each trial. The output voltage from the motor was then displayed on the oscilloscope. The PWM values indicate that power can be regulated on the dual motor driver. Below I've attached pictures of the Arduino code and the corresponding output on the oscilloscope. I defined my pins and used analogWrite() to assign the 200 ouput value to the corresponding pin, and output of 0 to all others. 
 
