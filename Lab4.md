@@ -89,6 +89,13 @@ After I connected all the components, I wanted to try a simple run through of ho
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a_DNTH_fRwI?si=bcoqw6fgPoXI9IA7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+Below is the code I used to create the loop my car followed in the video:
+
+<div style="display: flex; gap: 10px;">
+  <img width="375" alt="Profile Picture" src="CAL.jpg">
+  <img width="375" alt="Profile Picture" src="TESTRUN2.jpg">
+</div>
+
 ### Lower Limit PWM:
 
 To identify the minimum PWM required to overcome friction when placed on the floor, I increased the PWM in increments of 5 until the robot started moving. Once the car overcame static friction, I lowered the output value until it stopped moving. From this I found that the lower threshold was around 52. This was from when the car was starting from a full stop. If already moving, the car only needed a value of 37 in order to begin driving. I also noted that during these trials, my left set of wheels did not spin at the same rate as my right set. They were significantly weaker than the right set. 
@@ -103,7 +110,7 @@ As previously stated, there was a disparity in my wheel rotation rate despite th
 
 I implemented these findings into the following code: 
 
-<img width="500" alt="Profile Picture" src="IMG.jpg">
+<img width="500" alt="Profile Picture" src="SHOT.jpg">
 
 While this works in theory, I ran into a problem towards the end of my testing for calibration. After hours of testing, my left side wheels stopped running consistently. While the right side was working consistently, the left side would not achieve their final rotation rate unless I physically spun the wheel with my hand. Due to the time constraints, I was unable to film a video of my car functionally driving in a straght line.
 
