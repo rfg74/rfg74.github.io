@@ -22,19 +22,31 @@ The power supply was set to a voltage output corresponding with the 850 mAh batt
 
 #### Pin 0 with Output 200:
 
-<img width="500" alt="Profile Picture" src="IMG_2222.jpg"> <img width="500" alt="Profile Picture" src="IMG_7140.JPG"> 
+<div style="display: flex; gap: 10px;">
+  <img width="500" alt="Profile Picture" src="IMG_2222.jpg">
+  <img width="375" alt="Profile Picture" src="IMG_7140.JPG">
+</div>
 
 #### Pin 1 with Output 200:
 
-<img width="500" alt="Profile Picture" src="IMG_2223.jpg"> <img width="500" alt="Profile Picture" src="IMG_7136.JPG"> 
+<div style="display: flex; gap: 10px;">
+  <img width="500" alt="Profile Picture" src="IMG_2223.jpg">
+  <img width="375" alt="Profile Picture" src="IMG_7136.JPG">
+</div>
 
 #### Pin 6 with Output 200:
 
-<img width="500" alt="Profile Picture" src="IMG_2224.jpg"> <img width="500" alt="Profile Picture" src="IMG_7143.JPG"> 
+<div style="display: flex; gap: 10px;">
+  <img width="500" alt="Profile Picture" src="IMG_2224.jpg">
+  <img width="375" alt="Profile Picture" src="IMG_7143.JPG">
+</div>
 
 #### Pin 7 with Output 200:
 
-<img width="500" alt="Profile Picture" src="IMG_2225.jpg"> <img width="500" alt="Profile Picture" src="IMG_7144.JPG"> 
+<div style="display: flex; gap: 10px;">
+  <img width="500" alt="Profile Picture" src="IMG_2225.jpg">
+  <img width="375" alt="Profile Picture" src="IMG_7144.JPG">
+</div>
 
 ### Motor Testing
 
