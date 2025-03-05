@@ -67,7 +67,7 @@ In terms of code, I used the two codes below with the left image pertaining the 
   <img width="375" alt="Profile Picture" src="IMG_RIGHT.jpg">
 </div>
 
-### Battery Powerer All Wheel Spinning
+### Battery Powered All Wheel Spinning
 
 For this step, I connected the 850 mAh battery and soldered it to properly connect my wires. Once done, I uploaded the following code which turns all the wheels forward, followed by a brief stop, and then turns all the wheels backwards. 
 
