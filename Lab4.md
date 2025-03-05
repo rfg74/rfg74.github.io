@@ -74,3 +74,19 @@ For this step, I connected the 850 mAh battery and soldered it to properly conne
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zB5AEp2neBw?si=lEWp7rI7UwPgzvUb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The code I used to run this loop can be found below:
+
+<img width="500" alt="Profile Picture" src="IMG_TEST.JPG">
+
+### Car Setup and Initial Testing
+
+Below is an image of how I attached all components to my car, allowing it to run independently. 
+
+<img width="500" alt="Profile Picture" src="IMG_7182.JPG">
+
+*(Note: This is a very temporary setup given that I still need to work on my ToF sensors functionality)*
+
+After I connected all the components, I wanted to try a simple run through of how my robot moves. Below is a video of my car running a simple loop, where it drives forward, reverses, turns clockwise, then counterclockwise. From this initial test run I noted that when driving forward, my car skewed left. This is something I will address and calibrate later in the lab. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a_DNTH_fRwI?si=bcoqw6fgPoXI9IA7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Lower Limit PWM:
