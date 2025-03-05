@@ -75,7 +75,7 @@ For this step, I connected the 850 mAh battery and soldered it to properly conne
 
 The code I used to run this loop can be found below:
 
-<img width="500" alt="Profile Picture" src="IMG_TEST.JPG">
+<img width="500" alt="Profile Picture" src="IMG_TEST.jpg">
 
 ### Car Setup and Initial Testing
 
