@@ -91,15 +91,21 @@ After I connected all the components, I wanted to try a simple run through of ho
 
 ### Lower Limit PWM:
 
-To identify the minimum PWM required to overcome friction when placed on the floor, I increased the PWM in increments of 5 until the robot started moving. Once the car overcame static friction, I lowered the output value until it stopped moving. From this I found that the lower threshold was around 47. This was from when the car was starting from a full stop. If already moving, the car only needed a value of 33 in order to begin coasting. I also noted that during these trials, my left set of wheels did not spin at the same rate as my right set. They were significantly weaker than the right set. 
+To identify the minimum PWM required to overcome friction when placed on the floor, I increased the PWM in increments of 5 until the robot started moving. Once the car overcame static friction, I lowered the output value until it stopped moving. From this I found that the lower threshold was around 52. This was from when the car was starting from a full stop. If already moving, the car only needed a value of 37 in order to begin driving. I also noted that during these trials, my left set of wheels did not spin at the same rate as my right set. They were significantly weaker than the right set. 
 
 Turning proved to require a larger output thank simply moving forward. From my trials I found that a minimum output value of 72 was required to start rotation from a full stop. It should also be noted that throughout these trials, I used up a lot of the battery. As such, I assume these values would be lower on a fully charged battery.
 
+*(Note: for these tests I kept the output value for both motors equal. Thus, the 52 output threshold was when both sides were set to 52. The same applies for the turning value.)*
+
 ### Calibration Factor
 
-As previously stated, there was a disparity in my wheel rotation rate despite the output to both sides being set to equal values. This was causing a noteable skew to the left every time I ran my car. To resolve this, I have to implement a calibration factor such that both wheels spin at the same rate. During my analysis, I ran both wheels at an equal output. I lowered the output to 70 on each side. However, when I continued running my code multiple times, I noted that the output to the left set of wheels were spinning at random rates. Sometimes I would run the loop and the wheels would spin at the exact rate, other times the wheels would sputter or remain stagnant. 
+As previously stated, there was a disparity in my wheel rotation rate despite the output to both sides being set to equal values. This was causing a noteable skew to the left every time I ran my car. To resolve this, I have to implement a calibration factor such that both wheels spin at the same rate. During my analysis, I ran both wheels at an equal output. I set the output to 70 on each side. Additionally, I only ran the code for a two foot distance to speed up the process. From this reference value, I incrementally raised the left side's output until the car was able to drive in a straight line. Through continuous trial and error, I found that an output of 81 was able to keep the trajectory relatively straight. From this I was able to calculate a calibration factor of 81/70 ~= 1.16. 
 
-When both wheels were spinning at full capacity, there was a significantly smaller deflection. With the reference output as 70, I incrementally raised the left side's output until the car was able to drive in a straight line. Through continuous trial and error, I found that an output of 81 was able to keep the trajectory relatively straight. From this I was able to calculate a calibration factor of 81/70 ~= 1.16. Now I know for 200 output on my right set of wheels I need a 232 output for my left set. While this works in theory, in practice the irregularity of my left set of wheels inhibited me from getting the car to move in a proper straight line trajectory. 
+I implemented these findings into the following code: 
+
+<img width="500" alt="Profile Picture" src="IMG.jpeg">
+
+While this works in theory, I ran into a problem towards the end of my testing for calibration. After hours of testing, my left side wheels stopped running consistently. While the right side was working consistently, the left side would not achieve their final rotation rate unless I physically spun the wheel with my hand. Due to the time constraints, I was unable to film a video of my car functionally driving in a straght line.
 
 ## References
 
