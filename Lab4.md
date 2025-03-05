@@ -103,7 +103,7 @@ As previously stated, there was a disparity in my wheel rotation rate despite th
 
 I implemented these findings into the following code: 
 
-<img width="500" alt="Profile Picture" src="IMG.jpeg">
+<img width="500" alt="Profile Picture" src="IMG.jpg">
 
 While this works in theory, I ran into a problem towards the end of my testing for calibration. After hours of testing, my left side wheels stopped running consistently. While the right side was working consistently, the left side would not achieve their final rotation rate unless I physically spun the wheel with my hand. Due to the time constraints, I was unable to film a video of my car functionally driving in a straght line.
 
