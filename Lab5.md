@@ -21,7 +21,21 @@ This case transmits the collected PID data to my computer via Bluetooth. While d
 
 <img width="500" alt="Profile Picture" src="SEND_PID_DATA.jpg">
 
+Additionally, I implemented a hard stop feature into my code such that if the Bluetooth connection fails, all pin values will be set to 0. Once my code is outside the while loop I have for "central.connected()" (indicating that the Artemis board is no longer connected) the robot will come to a complete stop.
+
+<img width="500" alt="Profile Picture" src="HARD_STOP.jpg">
+
 ## Lab Tasks
 
-Before implementing my PID controller, I ran some preliminary tests to see how my robot would perform with the task. To do so, I combined my codes from labs 3 and 4 to create a simple code which would drive the car forward at a set speed until the front ToF sensor detected a distance of 1 foot from the wall. To test the error, I placed a ruler next to my car to quantify how close it got to the wall before actually coming to a full stop. Starting at a base speed of 75, I ran this test until my robot got uncomfortably close to making a full speed collision with the wall. 
+Before implementing my PID controller, I ran some preliminary tests to see how my robot would perform with the task. To do so, I combined my codes from labs 3 and 4 to create a simple code which would drive the car forward at a set speed until the front ToF sensor detected a distance of 1 foot from the wall. My car immediatly slammed into the wall.
 
+### Position Control
+
+For this task, I used my front ToF sensor to determine the distance the robot is from the wall such that it can come to a stop when it is one foot away from the wall. I implemented PID control such that it can adapt to changing conditions such as starting distance from the wall. 
+
+#### Sampling Frequency of ToF sensor
+
+
+#### Proportional Control
+
+I started by implementing proportional control and troubleshotting the ideal Kp value for my robot. As a starting value, I set my Kp value to be 0.1. 
