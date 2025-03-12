@@ -49,4 +49,4 @@ The movement of the car was determined by two functions driveForward_PID and dri
   <img width="350" alt="Profile Picture" src="BACKWARD.jpg">
 </div>
 
-As a starting value, I set my Kp value to be 0.1. I conduted multiple tests with different Kp values to find the optimal value for my system. At Kp = 0.1, my robot would hit the wall well before it started reversing. At Kp = 0.05 my robot managed to stop however it was just shy of hitting the wall before it began to reverse. I found that the optimal value was Kp = 0.01 
+As a starting value, I set my Kp value to be 0.1. I conduted multiple tests with different Kp values to find the optimal value for my system. At Kp = 0.1, my robot would hit the wall well before it started reversing. At Kp = 0.05 my robot managed to stop however it was just shy of hitting the wall before it began to reverse. I found that the optimal value was Kp = 0.01. This yielded the best results with my robot stopping at roughly 300 mm away from the wall. 
