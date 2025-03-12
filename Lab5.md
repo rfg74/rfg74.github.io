@@ -1,7 +1,5 @@
 # Lab 5
 
-For this lab, I have opted to implement a PID controller into my system. 
-
 ## Prelab
 
 In order to simplify debugging, I first determined the method I would use to send and recieve data over Bluetooth. To accomplish this, I initialized three Arduino cases. 
@@ -62,10 +60,16 @@ At Kp = 0.06 my robot managed to stop however it was just shy of hitting the wal
 
 <img width="350" alt="Profile Picture" src="6_INT.jpg">
 
-I found that the optimal value was Kp = 0.01. This yielded the best results with my robot stopping at roughly 300 mm away from the wall. 
+After multiple trials, I found that the optimal value was Kp = 0.01. This yielded the best results with my robot stopping at roughly 300 mm away from the wall. While I couldn't get the exact positioning with the P control, I found that this was a good foundation for me to move on to PD control. 
 
+#### Derivative Control
+Once I found a good value for Kp, I moved on to refining my Kd value such that I could implement P and D control simultaneously. Given the tendency of my robot to overshoot and oscillate heavily before stopping at its destination, I started with a higher Kd of 3. 
 
-#### Linear Extrapolation
+I adjusted my code by accounting for Kd in my PID value, as well as collecting D values in a seperate array.
+
+<img width="350" alt="Profile Picture" src="D.jpg">
+
+### Linear Extrapolation
 
 To account for the disparity between my ToF sensor and my PID loop, I used the standard extrapolation equation: 
 
