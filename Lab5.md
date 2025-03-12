@@ -38,8 +38,15 @@ For this task, I implemented PID control such that it can adapt to changing cond
 
 #### Proportional Control
 
-I started by implementing proportional control and troubleshotting the ideal Kp value for my robot. For the P controller, my robot adjusts its movement depending on its distance from the goal of one foot. Based on this, it will either move forward (or backward if it overshoots) at a corresponding PWM. The output speed is dependent on the error (the distance read by the ToF sensor - the goal distane) and the Kp value. As a starting value, I set my Kp value to be 0.1. 
+I started by implementing proportional control and troubleshotting the ideal Kp value for my robot. For the P controller, my robot adjusts its movement depending on its distance from the goal of one foot. Based on this, it will either move forward (or backward if it overshoots) at a corresponding PWM. The output speed is dependent on the error (the distance read by the ToF sensor - the goal distane) and the Kp value.
 
 <img width="500" alt="Profile Picture" src="P_CONTROL.jpg">
 
-I conduted multiple tests with different Kp values to find the optimal value for my system. At Kp = 0.1, my robot would hit the wall well before it started reversing. At Kp = 0.05 my robot managed to stop however it was just shy of hitting the wall before it began to reverse. I found that the optimal value was Kp = 0.01 
+The movement of the car was determined by two functions driveForward_PID and driveBackward_PID. These two functions (shown below) set the motor speed and direction depending on the PID value and ensured that the value was within bounds.
+
+<div style="display: flex; gap: 10px;">
+  <img width="500" alt="Profile Picture" src="FORWARD.jpg">
+  <img width="500" alt="Profile Picture" src="BACKWARD.JPG">
+</div>
+
+As a starting value, I set my Kp value to be 0.1. I conduted multiple tests with different Kp values to find the optimal value for my system. At Kp = 0.1, my robot would hit the wall well before it started reversing. At Kp = 0.05 my robot managed to stop however it was just shy of hitting the wall before it began to reverse. I found that the optimal value was Kp = 0.01 
