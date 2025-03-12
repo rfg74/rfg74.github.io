@@ -19,6 +19,12 @@ This case transmits the collected PID data to my computer via Bluetooth. While d
 
 <img width="350" alt="Profile Picture" src="PID_DATA.jpg">
 
+I called these commands through the following code in Python:
+
+<img width="350" alt="Profile Picture" src="PYTHONG.jpg">
+
+*(Note: I did not call the STOP_PID command because I implemented a seperate stopping mechanism which stops the robot once the amount of data collected exceeds the size of the array it's being stored in)*
+
 Additionally, I implemented a hard stop feature into my code such that if the Bluetooth connection fails, all pin values will be set to 0. Once my code is outside the while loop I have for "central.connected()" (indicating that the Artemis board is no longer connected) the robot will come to a complete stop.
 
 <img width="350" alt="Profile Picture" src="HARD_STOP.jpg">
