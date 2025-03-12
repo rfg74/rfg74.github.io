@@ -14,7 +14,7 @@ This case clears all previous data, starts my front ToF sensor, initiates storag
 ### 2. STOP_PID
 This case resets PID_on back to false and stops the motors from running. 
 
-<img width="500" alt="Profile Picture" src="STOP_PID.jpg">
+<img width="500" alt="Profile Picture" src="STOP.jpg">
 
 ### 3. SEND_PID_DATA
 This case transmits the collected PID data to my computer via Bluetooth. While designing the SEND_PID_DATA case, I decided that the relevant information that I needed to send to Jupyter Notebook consisted of: time, distance (inches), error, P, I, D, and PID values, as well as the motor input.
