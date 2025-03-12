@@ -35,6 +35,11 @@ For this task, I implemented PID control such that it can adapt to changing cond
 
 #### Sampling Frequency of ToF sensor
 
+By implementing a simple, temporary code into my Arduino script, I was able to calculate the average sampling rate of the ToF sensor. I accomplished this by finding the time difference between each new measurment from the ToF sensor. By using the millis() function to track time, I was able to use a variable deltaT to track the difference in time between each ToF reading. 
+
+<img width="350" alt="Profile Picture" src="SAMPLE.jpg">
+
+I found that my ToF sensor had a sampling period of 100ms. By implementing a similar method into my PID control loop, I was able to find the sampling rate for that  as well. From this I found that my PID loop runs much faster than my ToF sensor can collect data. My loop runs ar roughly 10ms which is 10x faster than my ToF sensor. I will acknowledge this disparity later. 
 
 #### Proportional Control
 
@@ -50,3 +55,14 @@ The movement of the car was determined by two functions driveForward_PID and dri
 </div>
 
 As a starting value, I set my Kp value to be 0.1. I conduted multiple tests with different Kp values to find the optimal value for my system. At Kp = 0.1, my robot would hit the wall well before it started reversing. At Kp = 0.05 my robot managed to stop however it was just shy of hitting the wall before it began to reverse. I found that the optimal value was Kp = 0.01. This yielded the best results with my robot stopping at roughly 300 mm away from the wall. 
+
+#### Linear Extrapolation
+
+To account for the disparity between my ToF sensor and my PID loop, I used the standard extrapolation equation: 
+
+y = y1 + (x - x1)((y2 - y1)/(x2 - x1))
+
+I implemented this into my code by adding an else if statement which checks if my ToF sensor has a new reading. If thre is a new reading, it is added to the distance_array like normal. However, if there is not a new reading, the former two measurements are recorded and used to exrapolate a new value based on their average.
+
+### References:
+For this lab, I referenced the lab reports of Mikayla Lahr, Daria Kot, and Stephen Wagner. I used ChatGPT to help trouble shoot with issues in my code that arose.
