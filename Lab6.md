@@ -39,4 +39,8 @@ To simplify my code from last time, I rewrote it to use a funciton which control
 <img width="350" alt="Profile Picture" src="TWO.jpg">
 <img width="350" alt="Profile Picture" src="THREE.jpg">
 
-I found my PID values expereimentally. Based on my findings from lab 5, I began tweaking my values until I found what worked best for my robot. From a long period of trial and error, I found that the optimal set of parameters was Kp = 0.06, Ki = 0.01, and Kd = 0.08. Similarly to my code from lab 5, I implemented an upper and lower bound to ensure that my PID control is always within a proper range such tht it won't be higher than posisible and will always have enough outptut to actualu be 
+I found my PID values expereimentally. Based on my findings from lab 5, I began tweaking my values until I found what worked best for my robot. From a long period of trial and error, I found that the optimal set of parameters was Kp = 0.06, Ki = 0.01, and Kd = 0.08. Similarly to my code from lab 5, I implemented an upper and lower bound to ensure that my PID control is always within a proper range such tht it won't be higher than posisible and will always have enough outptut to actually overcome static friction. I collected the relevant data in arrays which could then be easily 
+parsed through to analyze performance.
+
+
+
