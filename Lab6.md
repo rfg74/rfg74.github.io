@@ -17,6 +17,8 @@ The SEND_ORIENTATION_DATA case sends the relevant PID data to my computer. This 
 As mentioned previously, I implemented a hard stop for ifd the max data array size is reached, as well as a hard stop for is my robot gets disconnected. Both of these are consistent with the hard stop implemented in lab 5.
 
 ## Lab Tasks
+
+For this task, I implemented PID control by writing code in my loop function that is continously checking the status of ORIENTATION_on which can either be set to 0 or 1 (off or on). When set to 1, by the case called ORIENTATION, the robot starts moving to its position assigned by the "angle" input.
  
 ### Gyroscope Implementation
 In order to begin orientation control, I implemented the IMU's gyroscope into my code. To accomplish this, I tested my gyroscope by refreshing on my work from lab 2. This testing proved to me that the drift from my IMU was not negligible and lead me to use the Digital Motion Processor (DMP) for my orientation control to minimize yaw drift. To accomplish this, I followed the DMP tutorial linked on the course website. To accomplish this, I added the necessary code segments into my setup. For that, I added the following: 
@@ -24,18 +26,15 @@ In order to begin orientation control, I implemented the IMU's gyroscope into my
 <img width="350" alt="Profile Picture" src="DMP.jpg">
 
 ### Range/Sampling Time Discussion
-Referring back to lab 2, the IMU sensor has a sampling time which is relatively on par with the Artemis loop. Traditionally, the IMU has a sampling rate around 375 Hz. Given that I used the DMP function in the IMU, there is also the potential to set sampling frequency such that the two sampling times are parallel.
+Referring back to lab 2, the IMU sensor has a sampling time which is relatively on par with the Artemis loop. Traditionally, the IMU has a sampling rate around 375 Hz. Given that I used the DMP function in the IMU, there is also the potential to set sampling frequency myself. I can adjust the function: 
 
-### 
+success &= (myICM.setDMPODRrate(DMP_ODR_Reg_Quat6, 4) == ICM_20948_Stat_Ok);
 
+By changing the value after myICM.setDMPODRrate(DMP_ODR_Reg_Quat6, I set the DMP output as slower than the Artermis so the DMP queue doesnt't overflow. 
 
+### PID Control
+To simplify my code from last time, I rewrote it to use a funciton which controls my PID control for me. When the while loop detects that ORIENTATION_on = 1, the function begins to calculate the PID control values and in turn adjusts the motor output to drive the car to the a specified angle. The function code I implemented is below: 
 
-
-
-
-
-I did this by adding code inside the while loop such that the gyroscope updates each time the while loop runs. With each loop, the value for yaw is calculated using the previous value *yaw[y - 1]*, the gyroscope's reading *gyrZ*, and the difference in time between measurements *dt_gyr*. The code I implemented can be seen below:
-
-<img width="350" alt="Profile Picture" src="GYRO.jpg">
-
-
+<img width="350" alt="Profile Picture" src="ONE.jpg">
+<img width="350" alt="Profile Picture" src="TWO.jpg">
+<img width="350" alt="Profile Picture" src="THREE.jpg">
