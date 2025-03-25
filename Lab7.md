@@ -21,7 +21,11 @@ Collecting data over a period of two seconds, I collected the following data:
 
 In order to calculate the drag and momentum, I used the following equations below:
 
-[insert equations here]
+<div style="display: flex; gap: 10px;">
+  <img width="375" alt="Profile Picture" src="DRAG.jpg">
+  <img width="375" alt="Profile Picture" src="MOMENTUM.jpg">
+</div>
+
 
 From my trials using [insert PWM value here], I found that my 90% value for speed is [approximate] which occurs at [t_90]. Using the aforementioned equations, I got the following values for drag and momentum. 
 
