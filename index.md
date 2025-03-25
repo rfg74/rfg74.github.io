@@ -14,3 +14,4 @@ Hello! My name is Roberto Garcia, and I'm a Senior and Early M.Eng student study
 - [Lab 4: Motors and Open Loop Control](/Lab4)
 - [Lab 5: Linear PID Control and Linear Interpolation](/Lab5)
 - [Lab 6: Orientation PID](/Lab6)
+- [Lab 7: Kalman Filtering](/Lab7)
