@@ -4,7 +4,7 @@
 
 ### 1. Estimate Drag and Momentum
 
-I estimated the drag and momentume values necessary for the A and B matricies using a step response. I accomplished this by driving my robot towards a wall at a constant motor input while the ToF sensor collected distance measurements. From this data, I calculated the velocity and plotted it to find the 90% rise time. I selected my step input u(t) based on my calibration factor such that one wheel was operating at 250 PWM. This input was approximately [insert percent here] of the maximum PWM. This PWM value allowed for my robot to move as fast as possible while still moving in a straight line for long distances. 
+I estimated the drag and momentume values necessary for the A and B matricies using a step response. I accomplished this by driving my robot towards a wall at a constant motor input while the ToF sensor collected distance measurements. From this data, I calculated the velocity and plotted it to find the 90% rise time. I selected my step input u(t) based on my calibration factor such that one wheel was operating at 250 PWM. This input was approximately 72% of the maximum PWM. This PWM value allowed for my robot to move as fast as possible while still moving in a straight line for long distances. 
 
 To conduct there trials I implemented the following two cases into my code to initiate the trial and collect data.
 
@@ -16,8 +16,7 @@ This case transmits the collected data to my computer via Bluetooth. While desig
 
 Collecting data over a period of two seconds, I collected the following data:
 
-[insert distance vs time here]
-[insert velocity vs time here]
+<img width="248" alt="Profile Picture" src="DT.jpg">
 
 In order to calculate the drag and momentum, I used the following equations below:
 
@@ -27,7 +26,10 @@ In order to calculate the drag and momentum, I used the following equations belo
 </div>
 
 
-From my trials using [insert PWM value here], I found that my 90% value for speed is [approximate] which occurs at [t_90]. Using the aforementioned equations, I got the following values for drag and momentum. 
+From my trials using a PWM value of 180, I found that my 90% value for speed is 2.74968 m/s which occurs at approximately 1.237 seconds. Using the aforementioned equations, I got the following values for drag and momentum. 
+
+d = 1 / 2.74968 = 0.36368
+k = (-0.36368 * 1.237)/ln(0.1) = 0.19537
 
 ### 2. Initialize Kalman Filter (Python)
 
