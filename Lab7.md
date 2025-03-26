@@ -113,11 +113,11 @@ $$
 
 I used the following code in python to find the value for dt.
 
-<img width="248" alt="Profile Picture" src="PYTHONN.jpg"> 
+<img width="500" alt="Profile Picture" src="PYTHONN.jpg"> 
 
 In order to find the C matrix, I used the following code in python
 
-<img width="248" alt="Profile Picture" src="C.jpg"> 
+<img width="500" alt="Profile Picture" src="C.jpg"> 
 
 Lastly, I had to find the process noise and sensor noice covariance matricies. I refernced the slides from Lecture 14 to identify these equations. 
 
@@ -137,7 +137,7 @@ $$ \sum_{i=1}^{z} = \sigma_3^2 = ((20mm)^2)$$
 
 I implemented the following function into my python code to perform the Kalman Filter.
 
-<img width="248" alt="Profile Picture" src="KAL.jpg"> 
+<img width="500" alt="Profile Picture" src="KAL.jpg"> 
 
 This code predicts and returns values for mu and sigma. If theres not a new ToF sensor reading, the Kalman Filter will return the predicted values. 
 
