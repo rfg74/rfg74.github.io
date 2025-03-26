@@ -8,11 +8,13 @@ I estimated the drag and momentume values necessary for the A and B matricies us
 
 To conduct there trials I implemented the following two cases into my code to initiate the trial and collect data.
 
-#### MAX_SPEED
-This case clears all previous data, starts my front ToF sensor, initiates storage of time data, and sets DRIVE_on to 1 (this is initialized as 0 to keep the car off until the command is called). For the MAX_SPEED case, the command inputs consist of the DRIVE_on value and the array size "max" for data collection.
+#### DRAG_TEST
+This case clears all previous data, starts my front ToF sensor, initiates storage of time data, and sets DRIVE_on to 1 (this is initialized as 0 to keep the car off until the command is called). For the DRAG_TEST case, the command inputs consist of the DRIVE_on value and the array size "max" for data collection.
 
-#### GET_MAX_SPEED_DATA
-This case transmits the collected data to my computer via Bluetooth. While designing the GET_MAX_SPEEED_DATA case, I decided that the relevant information that I needed to send to Jupyter Notebook consisted of: time, distance (mm), and PWM value. 
+<img width="500" alt="Profile Picture" src="DRAGG.jpg">
+
+#### GET_DRAG_TEST_DATA
+This case transmits the collected data to my computer via Bluetooth. While designing the GET_DRAG_TEST_DATA case, I decided that the relevant information that I needed to send to Jupyter Notebook consisted of: time, distance (mm), and PWM value. This case was formatted the same way as in Labs 5+6 for sending data.
 
 Collecting data over a period of two seconds, I collected the following data:
 
