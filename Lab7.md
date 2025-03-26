@@ -16,7 +16,7 @@ This case transmits the collected data to my computer via Bluetooth. While desig
 
 Collecting data over a period of two seconds, I collected the following data:
 
-<img width="248" alt="Profile Picture" src="DT.jpg">
+<img width="500" alt="Profile Picture" src="DT.jpg">
 
 In order to calculate the drag and momentum, I used the following equations below:
 
