@@ -111,6 +111,14 @@ $$ B =
 \end{bmatrix}
 $$
 
+I used the following code in python to find the value for dt.
+
+<img width="248" alt="Profile Picture" src="PYTHONN.jpg"> 
+
+In order to find the C matrix, I used the following code in python
+
+<img width="248" alt="Profile Picture" src="C.jpg"> 
+
 ### 3. Implement and Test Kalman Filter in Jupyter (Python)
 ### 4. Implement the Kalman Filter on the Robot
 
