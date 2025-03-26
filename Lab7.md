@@ -135,11 +135,12 @@ $$ \sum_{i=1}^{z} = \sigma_3^2 = ((20mm)^2)$$
 
 ### 3. Implement and Test Kalman Filter in Jupyter (Python)
 
+I implemented the following function into my python code to perform the Kalman Filter.
 
+<img width="248" alt="Profile Picture" src="KAL.jpg"> 
 
+This code predicts and returns values for mu and sigma. If theres not a new ToF sensor reading, the Kalman Filter will return the predicted values. 
 
+### References
 
-
-
-
-
+For this lab I primarily referenced Stephen Wagner, Daria Kot, and Mikayla Lahr's labs from the past year. I also used ChatGPT for help with syntax to properly format matricies and equations in my webpage.
