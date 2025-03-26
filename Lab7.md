@@ -28,21 +28,88 @@ In order to calculate the drag and momentum, I used the following equations belo
 
 From my trials using a PWM value of 180, I found that my 90% value for speed is 2.74968 m/s which occurs at approximately 1.237 seconds. Using the aforementioned equations, I got the following values for drag and momentum. 
 
-d = 1 / 2.74968 = 0.36368
-k = (-0.36368 * 1.237)/ln(0.1) = 0.19537
+$$ d = 1 / 2.74968 = 0.36368 $$
+$$k = (-0.36368 * 1.237)/ln(0.1) = 0.19537$$
 
 ### 2. Initialize Kalman Filter (Python)
 
 I found my A and B matricies using the following formula and my calculated values for d (drag) and m (momentum):
 
-[insert A and B matricies here]
+$$ A =
+\begin{bmatrix}
+0 & 1 \\
+0 & -d/m
+\end{bmatrix}
+$$
 
-These matricies were calculated as seen below:
+$$ B =
+\begin{bmatrix}
+0 \\
+1/m
+\end{bmatrix}
+$$
 
-[insert A here]
-[insert B here]
+These matricies were calculated as seen below (after converting to the appropriate units)
 
-In order to discretize the matrices, I found the sampling time
+$$ A =
+\begin{bmatrix}
+0 & 1 \\
+0 & -1.8615
+\end{bmatrix} 
+$$
+
+$$ B =
+\begin{bmatrix}
+0 \\
+5118.4931
+\end{bmatrix}
+$$
+
+Once I had my A and B matrcies, I had to discretize them. I used the following methodolgy which was presented in class to accomplish this task.
+
+<img width="248" alt="Profile Picture" src="DISC.jpg">
+
+While initially, I planned to find the sampling time for the two matricies Ad and Bd, by finding the difference between timestamps, I found that this data was unreliable. As such I ended up using an average of values colleted across a loop. This in turn left me with an average sampling time of roughly 0.0872 seconds.
+
+Below, is the calculations I completed to find the discretized Ad and Bd matricies.
+
+$$ Ad = (I + dt * A) $$
+
+$$ Ad =
+\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix} 
++(0.0872)*
+\begin{bmatrix}
+1 & 0 \\
+0 & -1.8615
+\end{bmatrix} 
+$$
+
+$$ Ad =
+\begin{bmatrix}
+1 & 0.0872 \\
+0 & 0.8376
+\end{bmatrix} 
+$$
+
+$$ Bd = (dt * B) $$
+
+$$ B =
+(0.0872) *
+\begin{bmatrix}
+0 \\
+5118.4931
+\end{bmatrix}
+$$
+
+$$ B =
+\begin{bmatrix}
+0 \\
+446.33
+\end{bmatrix}
+$$
 
 ### 3. Implement and Test Kalman Filter in Jupyter (Python)
 ### 4. Implement the Kalman Filter on the Robot
