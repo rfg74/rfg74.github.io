@@ -119,8 +119,22 @@ In order to find the C matrix, I used the following code in python
 
 <img width="248" alt="Profile Picture" src="C.jpg"> 
 
+Lastly, I had to find the process noise and sensor noice covariance matricies. I refernced the slides from Lecture 14 to identify these equations. 
+
+$$ \sigma_1 = \sqrt{(10mm)^2 * (1/0.0872)} = 33.864 mm$$
+$$ \sigma_2 = \sqrt{(10mm/s)^2 * (1/0.0872)} = 33.864 mm$$
+$$ \sigma_3 = 20 mm$$
+$$ \sum_{i=1}^{u} = 
+\begin{bmatrix}
+(33.864)^2 & 0 \\
+0 & (33.864)^2
+\end{bmatrix} 
+$$
+
+$$ \sum_{i=1}^{z} = \sigma_3^2 = ((20mm)^2)$$
+
 ### 3. Implement and Test Kalman Filter in Jupyter (Python)
-### 4. Implement the Kalman Filter on the Robot
+
 
 
 
