@@ -44,7 +44,7 @@ While I was able to get my car to flip many times, I encountered difficulty when
 <iframe width="374" height="665" src="https://www.youtube.com/embed/c-JyFZy0uwE" title="trial 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-For my data collection, I only collected ToF sensor readings as the robot was approaching the wall and once the flip was complete, I had everything after set to 0. Given the nature of the flip, the secondary distance measurements didn't provide any useful information so I figured it was best to omit them. As we can see from the plots below, the change in ToF readings to lines up with the shift in PWM inputs. 
+For my data collection, I only collected ToF sensor readings as the robot was approaching the wall and once the flip was complete, I had everything after set to 0. Given the nature of the flip, the secondary distance measurements didn't provide any useful information so I figured it was best to omit them. As we can see from the plots below, the change in ToF readings to lines up with the shift in PWM inputs.
 
 I was able to get my car to succesfully perform the task two times, with my fastest time clocking in at roughly 2.6 seconds. 
 
