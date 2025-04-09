@@ -43,6 +43,10 @@ For my data collection, I only collected ToF sensor readings as the robot was ap
 
 <iframe width="374" height="665" src="https://www.youtube.com/embed/KwDDFsqCFJI" title="trial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<img width="350" alt="Profile Picture" src="hey.jpg">
+
+
+<iframe width="374" height="665" src="https://www.youtube.com/embed/c-JyFZy0uwE" title="trial 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 While I was able to get my car to flip many times, I encountered difficulty when it came to having it navigate back to the start line. 
