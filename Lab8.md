@@ -25,7 +25,7 @@ As such, I took some measures to adjust the car's center of mass, as well as the
 
 #### Center of Mass
 
-To ensure a flip occurs when the car comes to a harsh stop, I had to shift the car's center of mass by adding weight to the front side where the ToF sensor is located. It took multiple iterations but I was able to get successful flips after adding 2, 9V batteries, and a rock. 
+To ensure a flip occurs when the car comes to a harsh stop, I had to shift the car's center of mass by adding weight to the front side where the ToF sensor is located. It took multiple iterations but I was able to get successful flips after adding 2, 9V batteries, a rock, and some nails to the front of the car. 
 
 #### Friction
 
@@ -37,14 +37,14 @@ One issue I came upon was that my car would not drive in a straight line. In ord
 
 #### Trials
 
-For my data collection, I only collected ToF sensor readings as the robot was approaching the wall and once the flip was complete, I had everything else set to 0. Given the nature of the flip, the secondary distance measurements didn't provide any useful information so I figured it was best to omit them. As we can see from the plots below, the change in ToF readings to lines up with the shift in PWM inputs. 
+While I was able to get my car to flip many times, I encountered difficulty when it came to having it navigate back to the start line. Some of my failed attempts can be found here: 
 
 <iframe width="374" height="665" src="https://www.youtube.com/embed/KwDDFsqCFJI" title="trial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <iframe width="374" height="665" src="https://www.youtube.com/embed/c-JyFZy0uwE" title="trial 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-While I was able to get my car to flip many times, I encountered difficulty when it came to having it navigate back to the start line. 
+For my data collection, I only collected ToF sensor readings as the robot was approaching the wall and once the flip was complete, I had everything after set to 0. Given the nature of the flip, the secondary distance measurements didn't provide any useful information so I figured it was best to omit them. As we can see from the plots below, the change in ToF readings to lines up with the shift in PWM inputs. 
 
 I was able to get my car to succesfully perform the task two times, with my fastest time clocking in at roughly 2.6 seconds. 
 
