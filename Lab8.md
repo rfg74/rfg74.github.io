@@ -12,7 +12,7 @@ To accomplish this task, I used two cases FLIP and SEND_FLIP_DATA. Similar to my
 
 <div style="display: flex; gap: 10px;">
   <img width="375" alt="Profile Picture" src="PIC.jpg">
-  <img width="375" alt="Profile Picture" src="CODE.JPG">
+  <img width="375" alt="Profile Picture" src="CODE.jpg">
 </div>
 
 
