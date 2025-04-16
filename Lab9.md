@@ -10,7 +10,6 @@ This case controls the robot's orientation which I then integrated ToF sensor da
 
 This command with ToF data collection controls the car so it turns to each angel using my PID controller until the car is within a "close enough" range which I have labeled as 4 degrees. Once stopped, the car takes 3 ToF sensors from the front sensor. This yields me 60 data points per spot. 
 
-*INSERT VIDEO OF CODE WORKING*
 
 ### Readings Analysis
 
