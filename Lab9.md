@@ -6,9 +6,9 @@ To accomplish the mapping, I used orientation control. Initially, it took a lot 
 
 <img width="350" alt="Profile Picture" src="MAPS.jpg">
 
-This case controls the robot's orientation which I then integrated ToF sensor data collection into. 
+This case controls the robot's orientation which I then integrated ToF sensor data collection into. During my trial, I found that there was a notable amount of drift in my robots position of about 2 inches from the desired position. 
 
-This command controls the car so it turns to each angel using my PID controller until the car is within a "close enough" range which I have labeled as 4 degrees. Once stopped, the car takes 3 ToF sensors from the front sensor. This yields me 60 data points per spot. 
+This command with ToF data collection controls the car so it turns to each angel using my PID controller until the car is within a "close enough" range which I have labeled as 4 degrees. Once stopped, the car takes 3 ToF sensors from the front sensor. This yields me 60 data points per spot. 
 
 *INSERT VIDEO OF CODE WORKING*
 
