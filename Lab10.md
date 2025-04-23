@@ -28,13 +28,13 @@ The equations are modeled in Jupyter Notebook using the code below. First the di
 
 ### Odometry Motion Model
 
-This function takes the current and previous poses, and then extracts the odometry model parameters using the previously defined compute_control() function. It then uses this data to calculate the probability of the parameters as Gaussian distributions. Lastly, these probabilities are multiplies together to calculate the probability of the entire motion and returns is as "prob". The Jupyter Notebook code for this function can be seen below:
+This function takes the current and previous poses, and then extracts the odometry model parameters using the previously defined compute_control() function. It then uses this data to calculate the probability of the parameters as Gaussian distributions. Lastly, these probabilities are multiplied together to calculate the probability of the entire motion and returns is as "prob". The Jupyter Notebook code for this function can be seen below:
 
 <img width="560" alt="Profile Picture" src="ODOM.jpg">
 
 ### Prediction Step
 
-This functon takes the current and previous odometetry states, and extracts the odometry model parameters using the compute_control() function. It then uses 6 for loops to calculate the probability that the robot has moved to the next grid cell. I implemented an if statement into the code which helps speed up the filter. If the belief is < 0.0001 then the second half for loops will not be entered as it is sufficienly unlikely that the robot will be in the remaining grid cells. The code used is shown below: 
+This functon takes the current and previous odometetry states, and extracts the odometry model parameters using the compute_control() function. It then uses 6 for loops to calculate the probability that the robot has moved to the next grid cell. I implemented an if statement into the code which helps speed up the filter. If the belief is < 0.0001 then the second half of the for loops will not be entered as it is sufficienly unlikely that the robot will be in the remaining grid cells. The code used is shown below: 
 
 <img width="560" alt="Profile Picture" src="PREDICT.jpg">
 
@@ -46,7 +46,7 @@ This function takes in an array of observations and then calculates the probabil
 
 ### Update Step
 
-This function iterates through all the cells in the grid and calculates their probabilities using the previously defined sensor_model() function. This proabability is then multiplies by the predicted belief in order to update the belief. The belief is then normalized. The code used is shown below:
+This function iterates through all the cells in the grid and calculates their probabilities using the previously defined sensor_model() function. This proabability is then multiplied by the predicted belief in order to update the belief. The belief is then normalized. The code used is shown below:
 
 <img width="560" alt="Profile Picture" src="UPDATE.jpg">
 
