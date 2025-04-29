@@ -6,7 +6,7 @@
 
 I ran the Bayes Filter simulation provided to us in notebook *lab11_sim.ipynb* which resulted in the final plot shown below:
 
-*insert image here*
+<img width="560" alt="Profile Picture" src="FINAL_PLOT.jpg">
 
 The red line represents the odometry, the green is the ground truth, and the blue line represents the belief. 
 
@@ -16,7 +16,7 @@ In order to perform localization, I adapted my code from Lab 9 in in order to ro
 
 #### MAP_ORIENTATION
 
-<img width="560" alt="Profile Picture" src="FINAL_PLOT.jpg">
+
 
 #### SEND_MAP_ORIENTATION_DATA
 
