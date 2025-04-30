@@ -71,6 +71,10 @@ Below you will find the results of my real robot localization across the four pr
 
 #### Top Middle (0, 3)
 
+<div style="display: flex; gap: 10px;">
+  <img width="560" alt="Profile Picture" src="TM_1.jpg">
+  <img width="560" alt="Profile Picture" src="TM_1_PLOT.jpg">
+</div>
 
 #### Bottom Left (-3, -2)
 
