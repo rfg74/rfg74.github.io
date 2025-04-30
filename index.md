@@ -19,3 +19,4 @@ Hello! My name is Roberto Garcia, and I'm a Senior and Early M.Eng student study
 - [Lab 8: Stunts!](/Lab8)
 - [Lab 9: Mapping](/Lab9)
 - [Lab 10: Localization(Simulation)](/Lab10)
+- [Lab 11: Localization(Real)](/Lab11)
