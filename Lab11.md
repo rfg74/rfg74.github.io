@@ -93,7 +93,7 @@ The ground truth pose was (-0.914, -0.914, 0.000) and the computed belief pose w
 
 ### Conclusion
 
-Unfortunately, I was unable to test a follow-up data collection at each point due to time constraints and some hardware issues which took up the majorite of my time at office hours. However, I do anticipate that starting the robot in a different orientation would impact the accuracy of the belief reltive to the ground truth. Additioanlly, I would be interested in running the robot and collecting multiple data points at each angle and collecting an average distance to balance out the noise. 
+Unfortunately, I was unable to test a follow-up data collection at each point due to time constraints and some hardware issues which took up the majority of my time at office hours. However, I do anticipate that starting the robot in a different orientation would impact the accuracy of the belief reltive to the ground truth. Additioanlly, I would be interested in running the robot and collecting multiple data points at each angle and collecting an average distance to balance out the noise. 
 
 ### References
 
