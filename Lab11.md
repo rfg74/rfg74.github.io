@@ -39,7 +39,9 @@ In my main loop I used a flag variable to turn on the orientation and begin data
 
 #### Data Collection
 
-*insert video of car spinning and collecting data*
+<iframe width="355" height="631" src="https://www.youtube.com/embed/E5WVWCPvDYA" title="LAB 11 Orientation Control Mapping" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+*Note: My phone is almost completely out of storage hence the abrupt stop. I unfortunately forgot to make room and record a better video before going home to write up this report*
 
 ### Implementing PERFORM_OBSERVATION_LOOP
 
