@@ -51,26 +51,26 @@ I put my command to begin the rotation outside of the defintion of the perform_o
 
 <img width="560" alt="Profile Picture" src="CASE.jpg">
 
-### Running Robot Localization
+### Running Robot Localization (Run One)
 
-Below you will find the results of my real robot localization across the four predetermined positions (-3, -2), (0, 3), (5, -3), and (5, 3). At each point, I began my robots angular position at 0 (pointing north). After many trials and tribulations, I got two good runs for each of the desired points (omitting the origin). On the plot, the green represents the ground truth (i.e. the actual location of the robot) and the blue represents the belief of the robot's position. I collected data with my ToF sensor located at the front of the car, turning my robot in a counter clockwise direction. 
+Below you will find the results of my real robot localization across the four predetermined positions (-3, -2), (0, 3), (5, -3), and (5, 3). At each point, I began my robots angular position at 0 (facing the right). After many trials and tribulations, I got two good runs for each of the desired points (omitting the origin). On the plot, the green represents the ground truth (i.e. the actual location of the robot) and the blue represents the belief of the robot's position. I collected data with my ToF sensor located at the front of the car, turning my robot in a counter clockwise direction. 
 
 #### Top Right (5, 3)
-##### Run One
 
-##### Run Two
+<div style="display: flex; gap: 10px;">
+  <img width="560" alt="Profile Picture" src="TR_1.jpg">
+  <img width="560" alt="Profile Picture" src="TR_1_PLOT.jpg">
+</div>
 
 #### Bottom Right (5, -3)
-##### Run One
 
-#####  Run Two
+<div style="display: flex; gap: 10px;">
+  <img width="560" alt="Profile Picture" src="BR_1.jpg">
+  <img width="560" alt="Profile Picture" src="BR_1_PLOT.jpg">
+</div>
 
 #### Top Middle (0, 3)
-##### Run One
 
-##### Run Two
 
 #### Bottom Left (-3, -2)
-##### Run One
 
-##### Run Two
