@@ -62,12 +62,16 @@ Below you will find the results of my real robot localization across the four pr
   <img width="560" alt="Profile Picture" src="TR_1_PLOT.jpg">
 </div>
 
+The ground truth pose was (1.524, 0.914, 0.000) and the computed belief pose was (1.829, 0.610, 10.000) which yields a resultant error of (-0.305, -0.305, -10.000). The result is a bit off with the calculated belief sitting south east of the actual ground truth position of the robot. 
+
 #### Bottom Right (5, -3)
 
 <div style="display: flex; gap: 10px;">
   <img width="560" alt="Profile Picture" src="BR_1.jpg">
   <img width="560" alt="Profile Picture" src="BR_1_PLOT.jpg">
 </div>
+
+The ground truth pose was (1.524, -0.914, 0.000) and the computed belief pose was (1.524, -0.914, 10.000) which yields a resultant error of (0.000, 0.000, -10.000). On the plot only one dot appears due to the fact that the ground truth and belief are directly on top of each other. However, there is still an error of 10 degrees which is interesting.  
 
 #### Top Middle (0, 3)
 
@@ -76,5 +80,21 @@ Below you will find the results of my real robot localization across the four pr
   <img width="560" alt="Profile Picture" src="TM_1_PLOT.jpg">
 </div>
 
+The ground truth pose was (0.000, 0.914, 0.000) and the computed belief pose was (0.305, 0.914, 30.000) which yields a resultant error of (-0.305, 0.000, -30.000). I believe that the presence of this error was that this was one of my poorer attempts in which the wall was not as accurately sensed as normla. Regardless, it is still relatively close to the ground truth. 
+
 #### Bottom Left (-3, -2)
 
+<div style="display: flex; gap: 10px;">
+  <img width="560" alt="Profile Picture" src="BL_1.jpg">
+  <img width="560" alt="Profile Picture" src="BL_1_PLOT.jpg">
+</div>
+
+The ground truth pose was (-0.914, -0.914, 0.000) and the computed belief pose was (-0.914, -0.305, 10.000) which yields a resultant error of (-0.305, -0.609, -10.000). THe plot shows my belief to be significantly deviated from the ground truth (so far out that it is outside the boundary of the arena box itself.
+
+### Conclusion
+
+Unfortunately, I was unable to test a follow-up data collection at each point due to time constraints and some hardware issues which took up the majorite of my time at office hours. However, I do anticipate that starting the robot in a different orientation would impact the accuracy of the belief reltive to the ground truth. Additioanlly, I would be interested in running the robot and collecting multiple data points at each angle and collecting an average distance to balance out the noise. 
+
+### References
+
+For this lab, I referenced Daria Kot, Stephan Wagner, Rahul Goel and Mikayla Lahr's labs from last year. Additionally, I recieved some help from Aleira Sanchez in fixing my orientation control code. I also used ChatGPT to catch any errors or logical errors in my code (of which there were unfortunately many)
