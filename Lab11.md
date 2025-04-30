@@ -35,8 +35,40 @@ In my main loop I used a flag variable to turn on the orientation and begin data
   <img width="560" alt="Profile Picture" src="LOOP_2.jpg">
 </div>
 
+#### Data Collection
+
+*insert video of car spinning and collecting data*
+
 ### Implementing PERFORM_OBSERVATION_LOOP
+
+This function is designed to collect the 18 data points documented during the MAP_ORIENTATION case's 360 degree rotation and store the data points in the arrays *sensor_ranges* and *sensor_bearings*. These arrays are then returned and used during the update step. I utilized the asyncio function such that I could run the while loop continuously until all the data points were sent over. The for loop then attaches the data points to their corresponding array as well as converts the mm values into meters. 
+
+<img width="560" alt="Profile Picture" src="PERFORM_OBSERVATION_LOOP.jpg">
+
+I put my command to begin the rotation outside of the defintion of the perform_observation_loop function. In doing so, I made it easier to begin/terminate the rotation. The command I wrote to run the MAP_ORIENTATION case can be seen below:
+
+<img width="560" alt="Profile Picture" src="CASE.jpg">
 
 ### Running Robot Localization
 
+Below you will find the results of my real robot localization across the four predetermined positions (-3, -2), (0, 3), (5, -3), and (5, 3). At each point, I began my robots angular position at 0 (pointing north). After many trials and tribulations, I got two good runs for each of the desired points (omitting the origin). On the plot, the green represents the ground truth (i.e. the actual location of the robot) and the blue represents the belief of the robot's position. I collected data with my ToF sensor located at the front of the car, turning my robot in a counter clockwise direction. 
 
+#### Top Right (5, 3)
+##### Run One
+
+##### Run Two
+
+#### Bottom Right (5, -3)
+##### Run One
+
+#####  Run Two
+
+#### Top Middle (0, 3)
+##### Run One
+
+##### Run Two
+
+#### Bottom Left (-3, -2)
+##### Run One
+
+##### Run Two
