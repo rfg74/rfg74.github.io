@@ -20,3 +20,4 @@ Hello! My name is Roberto Garcia, and I'm a Senior and Early M.Eng student study
 - [Lab 9: Mapping](/Lab9)
 - [Lab 10: Localization(Simulation)](/Lab10)
 - [Lab 11: Localization(Real)](/Lab11)
+- [Lab 12: Planning and Execution](/Lab12)
