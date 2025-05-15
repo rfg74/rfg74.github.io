@@ -60,7 +60,7 @@ I ran my code many times, iterating each parameter and recharging my battery man
 
 <iframe width="355" height="631" src="https://www.youtube.com/embed/Va-L4BG9KSg" title="Successful Run" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-This was my best run using the strategy described above. I was able to successfully hit at least within the square of each point, with my code performing particulalry well for the final three points. As a whole, I managed to successfully navigate about the path of coordinates, even if I was a bit off from perfectly hitting each point. 
+These were two of my best run using the strategy described above. I was able to successfully hit at least within the square of each point. As a whole, I managed to successfully navigate about the path of coordinates, even if I was a bit off from perfectly hitting each point. 
 
 ## Conclusion
 
